@@ -1,0 +1,50 @@
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFAWkGPm1PUJbJsXfepUvUiauSoBUQrYvXpZIiaB3mGibUjxrkICJHy3HRSAiciaSllH6Vltm9YAKicsKPTQ/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=0
+
+# 一、历史背景与研究动机
+
+背景：20 世纪初，神经科学逐渐认识到神经元是大脑的基本单位。科学家希望能找到大脑“计算”的原理。  
+问题：  
+神经元如何集体处理信息？  
+能否用逻辑与数学形式来描述神经系统？  
+
+McCulloch（神经科学背景） + Pitts（逻辑与数学天才） 的合作：  
+他们结合神经生理学与数理逻辑，提出了一个抽象模型，试图用“逻辑电路”的方式解释神经活动。  
+
+核心目标：  
+建立一个足够简单但又有解释力的模型，使得“神经元活动 ↔ 数理逻辑”之间可以直接对接。
+
+---
+
+# 二、神经元的抽象模型（M-P 神经元）
+
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFAWkGPm1PUJbJsXfepUvUiaupfr2V2csh1LVPadZxruvia7QhKmxaB0iaCIN2pt8icrbmcGSDatJZaQqQ/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=1  
+（当研究的事情复杂到难以解决，问题可能出现在底层语言的表示上，相比于突破语言的边界，更容易的方法可能是重新选择一套更合适的语言体系）
+
+---
+
+# 三、神经元与逻辑计算
+
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFAWkGPm1PUJbJsXfepUvUiau6qX3icuevMc0RRyger6iaicUQfTibNBlZCXGxVONcWFRgPlMvckRvCN7NQ/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=2
+（将神经元模型与逻辑电路结合，思维便在这一过程中被形式化）
+
+---
+
+# 四、时间与动力学：神经网络的“计算过程”
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFAWkGPm1PUJbJsXfepUvUiauWVR6fYictkzTHBQibfY9tIDoUjibwwAPA7hd7qo0YsuDeKIf41k5qrXzQ/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=3
+---
+
+# 五、计算能力：图灵完备性
+
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFAWkGPm1PUJbJsXfepUvUiaucCL4yyibgK34KcVsqQhGhRfe59HWRqkibolKLhaf4184K0ERDmWjDWvA/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=4
+---
+
+# 六、对AI的影响
+
+1.奠定了连接主义的数学起点：首次将生物神经元抽象为数学模型，奠定了计算心智论的理论基础。  
+2.感知机和神经网络模型直接继承了神经元阈值单元模型，现代神经网络要复杂得多，然而起源来自1943的这篇论文。  
+3.建立了神经活动与计算的同构：证明智能或许能被人类非生物性建构。  
+4.在一定程度上对人类思维活动的神秘主义祛魅，然而神经元的数学模型毕竟只是生物神经元的抽象表示，就连最底层的两者神经元之间的电流传递是连续的还是离散的都不同，虽然引入激活函数后神经元模型的电流传递可以变为连续的，但那是为了求导的可计算性而不是对生物神经元的模拟，所以两者有着本质的区别，神经元模型只是对生物神经元的简化。然而这也从实用主义的角度启示了ai的未来或许不是复杂的仿生过程，而是对复杂智能体的大胆简化。
+
+---
+
+“神经元相信它们的放电是计算的结果而非自由的选择，于是楚门的世界变成了每秒24帧的真理。”
