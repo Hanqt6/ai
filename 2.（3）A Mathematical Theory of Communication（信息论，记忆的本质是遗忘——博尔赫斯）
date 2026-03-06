@@ -1,0 +1,88 @@
+
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzFUa4ZfstiasJrdOqj6XeC93xOCcOy4lsOjiaDiaHWMRb0LhnJ3pL34sJPg/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=0
+## 一、研究背景
+
+20世纪 40 年代，电信与无线通信快速发展，迫切需要一种数学理论来衡量信息的本质、容量和传输效率。
+
+Shannon 的论文首次将“信息”抽象为概率分布上的不确定性，建立了严格的量化模型。
+
+影响：奠定了现代通信、数据压缩、计算机科学乃至人工智能的信息论基础。
+
+---
+
+## 二、论文的核心思想
+
+Shannon 在文中解决了三个核心问题：
+
+- 信息量如何度量？（信息熵）
+- 信道能传输多少信息？（信道容量）
+- 噪声存在时，能否可靠传输？（噪声信道定理）
+
+---
+
+## 三. 信息源与“信息量”的度量：熵
+
+### 1.信息源模型
+
+把信息源建模为随机过程产生符号序列：离散（字母表有限/可数）或连续（实值）。
+
+独立同分布（i.i.d.）源与马尔可夫源在文中均讨论，强调平稳性与统计特征是可学习/可利用的。
+
+（信息源的统计特征决定了我们是否能更高效地表示与预测，这也是ai存在的前提条件）
+
+### 2.熵的公设与唯一化
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzFouDrYeZibYwHasDxjI1ibBGs3kwLvH2gKPU3IqbX7Uib7iaH3VndrTNLuA/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=1
+
+（信息不是内容本身，而是内容能够带来的对未知的打破程度）
+
+### 3.条件熵、联合熵与互信息（原文称“equivocation / mutual information”）
+
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzF3FotAw4WOc3oFb0LqxT1Lz2v4jZibaFtHVvMk90V2AqeAII6nkFAMcQ/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=2（真正有价值的信息使通信对方减少不确定性）
+
+### 4.冗余与自然语言
+
+定义冗余：R=1−Hlog⁡∣X∣R=1-\dfrac{H}{\log |\mathcal{X}|}R=1−log∣X∣H。
+
+通过预测实验估算英语冗余 ≈ 50% 左右（可压缩/可纠错余量）。
+
+（语言的冗余不是浪费，而是生物交流的容错设计，因为我们有可能将字打错，将话说错，但机器不需要显然很高程度的容错设计）
+
+---
+
+## 四. 源编码：无噪声信道上的压缩极限
+
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzFQg6TNDwyX2bT1DEkE4o2aGgqcNDESAb8ibHF7ARsOSVWxxNzDR2fC1Q/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=3
+
+（熵是信息压缩的极限，能用统计规律将信息降维就可以压缩，不能的话就只能完全存储）
+
+---
+
+## 五.信道模型与容量
+
+### 1.离散无记忆信道（DMC）
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzFvRnPibhRacHH54tPQXxW4171cNVh2WicJ3ic3MS2jvxWxibW3jj1qZYjsg/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=4
+
+---
+
+## 六. 噪声信道的可靠传输：Shannon 信道编码定理（奠基结果）
+
+### 1.正向定理（可达性）
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzFNf3I67ojjibSP8IKb1x2zntgUQyxSFy1QukWzqqHZ5jAOzxic4ZxlHiag/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=5
+
+（完美编码的存在性证明）
+
+---
+
+## 七.与后续理论的边界与承接
+https://mmbiz.qpic.cn/sz_mmbiz_png/2TLPfRVIyFD0ltej6mAoZJibetBt9vmzF92crfPFia5tcWTpZY3ahT4FPTFfnJhysLbjIIhreEOT8951hQNjUe0w/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1#imgIndex=6
+
+---
+
+## 八、论文对ai领域的关键影响
+
+1.熵成为衡量知识、学习、推理中的统一指标  
+2.机器学习领域大量使用交叉熵损失函数  
+3.启发了ai哲学：智能或许是一个减少不确定性的过程  
+3.压缩极限的概念启发了表示学习的重要性，压缩程度越高=越好的表示（与学习的本质就是找到信息的低维表示这一概念对应，大量的数据集被有效地压缩成小量的参数便是机器学习的核心）。所以好的模型应该敢于舍弃冗余的信息，毕竟博闻强记的富内斯无法形成任何有意义的思考
+
+“我认为我的每一句话（每一个手势）都将永远保存在他的记忆里；我不敢做任何手势，因此十分拘谨”——致博闻强记的富内斯
